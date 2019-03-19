@@ -1,0 +1,232 @@
+*{margin: 0; padding: 0;}
+
+.banner{
+    background: url("../images/bookback.jpg");
+    width:100%;
+    background-size:cover;
+}
+.banner1{
+    background: url("../images/aboutmid.jpg");
+    width:100%;
+    background-size:cover;
+}
+.top-bar{
+    background-color:#773838;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display:flex;
+    width: 100%;
+    height:auto;
+}
+.logo{
+    color: #fff;
+    -webkit-box-flex: 1;
+    -webkit-flex:1;
+    -ms-flex: 1;
+    flex:1;
+    font-size: 40px;
+    padding:18px;
+    text-transform: uppercase;
+    font-family: 'Margarine', cursive;
+    background-color: #773838;
+}
+.menu{
+    -webkit-flex: 3px;
+    -webkit-box-flex: 3px;
+    -ms-flex:3;
+    flex:3;
+}
+.menu ul{
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display:flex;
+    list-style: none;
+    margin-top: 30px;
+    
+    flex-flow: row wrap;
+}
+.menu ul li{
+    flex: 1;
+    text-align: center;
+}
+.menu ul li a{
+    color:#fff;
+    font-size: 20px;
+    text-decoration: none;
+}
+.menu li.current a, .menu a:hover{
+
+	color: #56a79a;
+	border-bottom: 3px solid #56a79a;
+	padding-bottom: 3px;
+}
+.banner-text{
+    display:flex;
+    padding: 15% 0;
+
+}
+.banner-text-items{
+    color: #fff;
+    margin: auto;
+    text-align: center;
+    width:50%;
+}
+.banner-text-items h2{
+    font-size: 2em;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    font-family: 'Open-sans', sans-serif;
+}
+.main-content{
+    display: flex;
+    flex-flow: row wrap;
+    padding: 5% 0;
+    background: url("../images/bookmiddle.jpg");
+}
+
+
+
+.main1{
+    float: 1px;
+    padding:3%;
+    text-align: center;
+}
+/*contacts*/
+.contact-items{
+    display:flex;
+    align-items: center;
+    flex-direction: column;
+}
+.contact{
+    background:url("../images/background.jpg");
+    padding: 80px 0;
+    position: relative;
+    z-index:1;
+}
+.contact:before{
+    position: absolute;
+    content: '';
+    height:100%;
+    width:100%;
+    top:0;
+    left:0;
+    background: rgba(0,0,0,0.5);
+    z-index: -1;
+}
+
+.contact-items h2{
+    color: #fff;
+    font-size: 40px;
+    margin-bottom:18px;
+
+
+
+}
+.contact-items input[type="text"]{
+    border-radius: 10px;
+    margin-bottom: 15px;
+    padding:15px;
+    width:50%;
+}
+.contact-items textarea{
+border-radius: 10px;
+height: 150px;
+padding:15px;
+width: 50%;
+
+}
+
+.contact-items a{
+
+    background: #da4b29;
+    color:#fff;
+    display:block;
+    font-size:20px;
+    margin-top:25px;
+    padding: 15px 80px;
+    text-decoration: none;
+    text-transform: uppercase;
+
+}
+img.resize {
+    width:200px;
+    height:40px;
+  }
+
+@media all and (max-width:500px){
+    .top-bar{
+        flex-direction: column;
+        text-align: center;
+    }
+    .logo{
+        padding: 18px 0 0;
+    }
+    .menu ul{
+        flex-direction: column;
+        margin-top: 0;
+    }
+    .menu ul li{
+        padding:5px;
+    }
+    .banner-text-items{
+        width: 100%;
+    }
+    .banner-text items h2{
+        font-size: 1.5em;
+    }
+    .main-content{
+        flex-direction: column;
+    }
+}
+@media all and (max-width:800px){
+
+    .top-bar{
+        flex-direction: column;
+        text-align: center;
+    }
+    .logo{
+        padding: 18px 0 0;
+    }
+    .menu ul{
+        flex-direction: column;
+        margin-top: 0;
+    }
+    .menu ul li{
+        padding:5px;
+    }
+    .banner-text-items{
+        width: 100%;
+    }
+    .banner-text items h2{
+        font-size: 1.5em;
+    }
+    .main-content{
+        flex-direction: column;
+    }
+}
+.column{
+    background-position: center;
+    text-align: center;
+    padding: 8% 0;
+    
+
+}
+
+.column p{
+    font-family: 'Srisakdi', cursive;
+   
+    padding: 4% 4% 4% 4%;
+}
+
+.thank-you-message p{
+    font-family:'Srisakdi', cursive;
+    text-align: center;
+    padding: 4% 0;
+    font-size: 250%;
+    
+}
+#thank-you{
+    background-image: url("../images/background.jpg");
+}
